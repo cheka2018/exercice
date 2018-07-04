@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+    <title>Exerceice javascript30</title>
+  </head>
+  <body>
+
+    <!-- cours 1 : Kit batterie -->
+  <div class="cours">
+	   <h2> tapez les lettres indiquées </h2>
+			<div class="keys">
+			 <button type="button" data-key ="77" class="key btn btn-primary">
+			   <kbd>M</kbd>
+			   <span class="sound">clap</span>
+			 </button>
+			  <button type="button" data-key ="72" class="key btn btn-secondary">
+			   <kbd>H</kbd>
+			   <span class="sound">hihat</span>
+			 </button>
+			  <button type="button" data-key ="65" class="key btn btn-success">
+			   <kbd>A</kbd>
+			   <span class="sound">kick</span>
+			 </button>
+			  <button type="button" data-key ="78" class="key btn  btn-danger">
+			   <kbd>N</kbd>
+			   <span class="sound">openhat</span>
+			 </button>
+			  <button type="button" data-key ="68" class="key btn  btn-warning">
+			   <kbd>D</kbd>
+			   <span class="sound">boom</span>
+			 </button>
+			</div>
+
+
+ 
+		  <audio data-key="77" src="sounds/clap.wav"></audio>
+		  <audio data-key="72" src="sounds/hihat.wav"></audio>
+		  <audio data-key="65" src="sounds/kick.wav"></audio>
+		  <audio data-key="78" src="sounds/openhat.wav"></audio>
+		  <audio data-key="68" src="sounds/boom.wav"></audio>
+  </div>
+
+   <!-- cours 2 : Horloge -->
+
+  <div class="cours">
+    <h2> Quelle heure est-t-il </h2>
+		 <div class="clock">
+	      <div class="clock-face">
+	        <div class="hand hour-hand"></div>
+	        <div class="hand min-hand"></div>
+	        <div class="hand second-hand"></div>
+	      </div>
+	    </div>
+  </div>
+
+  <!-- cours 3 : Variable CSS -->
+
+<div class="cours">
+ <h2>Mettre à jour les variables CSS avec <span class='hl'>JS</span></h2>
+
+  <div class="controls">
+    <label for="spacing">Espacement:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px" >
+
+    <label for="blur">Floue:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+    <label for="base">Base Couleur de base</label>
+    <input id="base" type="color" name="base" value="#ffc600" >
+  </div>
+  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+ </div>
+
+<!-- cours 4 : Array cardio-->
+<div class="cours">
+<h2> Exercice avec la console </h2>
+<table  class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">year</th>
+      <th scope="col">passed</th>
+    </tr>
+  </thead>
+  <tbody id="tableau">
+    <tr id="maLigne">
+      <th scope="row">1</th>
+      <td>Albert</td>
+      <td>Einstein</td>
+      <td>1879</td>
+      <td>1955</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Isaac</td>
+      <td>Newton</td>
+      <td>1643</td>
+      <td>1727</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Galileo</td>
+      <td>Galilei</td>
+      <td>1564</td>
+      <td>1727</td>
+    </tr>
+     <tr>
+      <th scope="row">1</th>
+      <td>Marie</td>
+      <td>Curie</td>
+      <td>1867</td>
+      <td>1934</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Johannes</td>
+      <td>Kepler</td>
+      <td>1571</td>
+      <td>1630</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Nicolaus</td>
+      <td>Copernicus</td>
+      <td>1473</td>
+      <td>1543</td>   
+    </tr>
+      <tr>
+      <th scope="row">1</th>
+      <td>Max</td>
+      <td>lanck</td>
+      <td>1858</td>
+      <td>1955</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Katherine</td>
+      <td>Blodgett</td>
+      <td>1898</td>
+      <td>1979</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Ada</td>
+      <td>Lovelace</td>
+      <td>1815</td>
+      <td>1852</td>
+    </tr>
+     <tr>
+      <th scope="row">1</th>
+      <td>Sarah E.</td>
+      <td>Goode</td>
+      <td>1855</td>
+      <td>1905</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Lise</td>
+      <td>Meitner</td>
+      <td>1878</td>
+      <td>1968</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Hanna</td>
+      <td>Hammarström</td>
+      <td>1829</td>
+      <td>1909</td>
+     </tr>   
+  </tbody>
+</table>
+</div>
+
+<!-- Cours 8 : l'élement  "canvas" -->
+<div class="cours">
+  <h2> cours n°8 : canvas </h2>
+<canvas id="draw" width="600" height="300"></canvas>
+</div>
+
+
+<!-- Cours 10 :  cases à cocher -->
+<div class="cours">
+  <h2> cochez les films que vous avez vues, si vous avez une suite de cases , enfoncez la touche MAJ et la dernier film a cocher </h2>
+  <div class="inbox">
+    <div class="item">
+      <input type="checkbox">
+      <p>Titanic</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Seul au monde</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Seven</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Iron man</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Usuel suspect</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Intouchable</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Sixième sens</p>
+    </div>    
+  </div>
+  <button type="button" class="btn btn-primary btn-lg" id="clear">Effacer</button>
+</div>
+
+
+<script src=index.js></script> 
+
+
+ 
+  </body>
+</html>
+
+
+
+
+
